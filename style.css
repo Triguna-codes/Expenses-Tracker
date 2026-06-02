@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* A light, clean canvas underneath */
+    
+    /* 3 Beautiful Complementary Colors: Royal Blue, Bright Cyan, and Neon Purple */
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.4) 0%, transparent 45%), /* Royal Blue */
+        radial-gradient(circle at 90% 10%, rgba(6, 182, 212, 0.45) 0%, transparent 50%), /* Bright Cyan */
+        radial-gradient(circle at 50% 80%, rgba(168, 85, 247, 0.35) 0%, transparent 50%); /* Neon Purple */
+        
+    background-size: 200% 200%;
+    background-attachment: fixed;
+    
+    /* Keeps your awesome flowing effect active */
+    animation: flowBackground 10s ease-in-out infinite;
+    
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+.tracker-box {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.96); /* Boosted to 96% solid white for perfect readability */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15); /* Softer shadow for a cleaner look */
+    backdrop-filter: blur(0px) !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a855f7;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4a5568;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    font-size: 16px;
+}
+
+.inputs-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.02); /* Slight pop effect on hover */
+}
+
+.calc-btn {
+    background: #48bb78; /* Green button for calculating */
+}
+
+.calc-btn:hover {
+    background: #38a169;
+}
+
+.list-section {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 25px 0;
+}
+
+/* Color-coded result cards */
+.result-card {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: #edf2f7;
+    color: #4a5568;
+}
+
+.green {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.yellow {
+    background: #ffe082;
+    color: #744210;
+}
+
+.red {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+/* This controls the flowing coordinates of the background */
+@keyframes flowBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+/* Full-screen background for the welcome layer */
+.welcome-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.95); /* Deep dark background to hide the app first */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Forces it to sit on top of everything else */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth fade effect */
+}
+
+/* The stylish centered card */
+.welcome-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.welcome-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.welcome-card h2 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.welcome-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Next Button Styling */
+.start-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.start-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Class to trigger the fade out */
+.hide-welcome {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

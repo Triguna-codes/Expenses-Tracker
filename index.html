@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen" class="welcome-container">
+        <div class="welcome-card">
+            <span class="welcome-icon">💰</span>
+            <h2>WELCOME TO YOUR ONLINE EXPENSE TRACKER</h2>
+            <p>Smart budgeting made simple!</p>
+            <button onclick="startApp()" class="start-btn">Click Next to Start ➜</button>
+        </div>
+    </div>
+
+    <div class="blur-frame-wrapper" style="width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+
+
+
+    <div class="tracker-box">
+        <h1>💸 Smart Expense Tracker</h1>
+        <p class="subtitle">Digital Pocket Wallet</p>
+        
+        <div class="section">
+            <h3>1. Add New Daily Expense</h3>
+            <input type="number" id="expenseInput" placeholder="Enter amount (e.g., 200)">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <div class="section list-section">
+            <h3>📋 Your Expense History</h3>
+            <p><strong>Base Expenses Array:</strong> <span id="list">No expenses yet</span></p>
+            <p><strong>Prefix Sum Array:</strong> <span id="prefixList">No expenses yet</span></p>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h3>2. Fast Range Query</h3>
+            <div class="inputs-row">
+                <input type="number" id="l" placeholder="Start Index (0, 1...)">
+                <input type="number" id="r" placeholder="End Index">
+            </div>
+            <button onclick="findTotal()" class="calc-btn">Calculate Total</button>
+        </div>
+
+        <div id="output" class="result-card">
+            Result will appear here
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
