@@ -50,7 +50,7 @@ function findTotal() {
         return;
     }
 
-    // Apply the magic Prefix Sum O(1) formula!
+    // Apply the magic Prefix Sum O(1) formula
     let ans;
     if (l == 0) {
         ans = prefix[r];
@@ -77,7 +77,7 @@ function findTotal() {
         box.classList.add("red");
     }
 
-    // Display the clean final text into our beautiful card!
+    // Display the clean final text into our card
     box.innerHTML = "Total Expense = ₹" + ans + "<br><small>" + label + "</small>";
 }
 
