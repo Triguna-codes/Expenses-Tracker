@@ -12,7 +12,7 @@ body {
     background-size: 200% 200%;
     background-attachment: fixed;
     
-    /* Keeps your awesome flowing effect active */
+    /* Keeps the flowing effect active */
     animation: flowBackground 10s ease-in-out infinite;
     
     backdrop-filter: blur(15px);
@@ -175,7 +175,7 @@ hr {
     transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth fade effect */
 }
 
-/* The stylish centered card */
+/* The centered card */
 .welcome-card {
     background: white;
     padding: 40px;
