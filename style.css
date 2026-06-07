@@ -4,8 +4,8 @@ body {
     background-color: #08070b; 
     
     background-image: 
-        radial-gradient(circle at 10% 20%, rgba(255, 0, 127, 0.22) 0%, transparent 45%), /* Neon pink  */
-        radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.25) 0%, transparent 50%), /* Cyber violet */
+        radial-gradient(circle at 10% 20%, rgba(255, 0, 127, 0.6) 0%, transparent 45%), /* Neon pink  */
+        radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.8) 0%, transparent 50%), /* Cyber violet */
         radial-gradient(circle at 50% 80%, rgba(0, 0, 0, 0.8) 0%, transparent 50%); /* Blackish shadow depth */
         
     background-size: 200% 200%;
