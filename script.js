@@ -30,8 +30,11 @@ function buildPrefix() {
 }
 
 function findTotal() {
-    let l = Number(document.getElementById("l").value);
-    let r = Number(document.getElementById("r").value);
+    let startDay = Number(document.getElementById("startDay").value);
+    let endDay = Number(document.getElementById("endDay").value);
+
+    let l= startDay-1;
+    let r= endDay-1;
 
     if (l < 0 || r >= expenses.length || l > r) {
         alert("Invalid range index selected!");
