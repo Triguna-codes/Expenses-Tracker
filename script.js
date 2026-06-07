@@ -57,19 +57,23 @@ function findTotal() {
 
     
     let label = "";
+    let statusMessage = "";
     if (ans < 500) {
         label = "🟢 Low Spending Level";
+        statusMessage = "FANTASTIC!! Everything is going absolutely fine. Continue with the smart spending 🌟";
         box.classList.add("green");
     } else if (ans < 1000) {
         label = "🟡 Medium Spending Level";
+        statusMessage = "Cruising comfortably, but keep an eye on the road ahead. You're still in the safe zone. Don't lose focus ⚖";
         box.classList.add("yellow");
     } else {
         label = "🔴 High Spending Level";
+        statusMessage = "⚠ Budget alert: Your spending is moving quicker than usual this period. To stay on track and avoid a tight month, consider hitting the brakes on non-essential expenses for a few days. Fix it now ⚙";
         box.classList.add("red");
     }
-
-    
-    box.innerHTML = "Total Expense = ₹" + ans + "<br><small>" + label + "</small>";
+box.innerHTML = `<h3>Total Calculated Sum: ₹${ans}</h3>
+    <p style="margin-top: 15px; font-weight: bold; font-size: 1.1rem; margin-bottom: 5px;">${label}</p>
+    <p style="margin-top: 0; opacity: 0.9; font-size: 1rem;">${statusMessage}</p>`;
 }
 
 
