@@ -37,9 +37,10 @@ function findTotal() {
     let r= endDay-1;
 
     if (l < 0 || r >= expenses.length || l > r) {
-        alert("Invalid range index selected!");
+        alert("Invalid range of days selected! Please check your input");
         return;
     }
+    let totalExpense= 0;
 
     let ans;
     if (l == 0) {
@@ -49,7 +50,7 @@ function findTotal() {
     }
 
     
-    let box = document.getElementById("output");
+    let box = document.getElementById("output") ;
     
     
     box.className = "result-card"; 
